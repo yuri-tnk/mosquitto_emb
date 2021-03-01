@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="mosq_emb_client/util_mosq.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3104" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="BearSSL/src/ec/ec_c25519_m15.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1942" topLine="45" />
+		</Cursor>
+	</File>
+	<File name="BearSSL/src/ec/ec_c25519_i31.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2188" topLine="47" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/memory_mosq.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1568" topLine="65" />
+		</Cursor>
+	</File>
+	<File name="BearSSL/inc/bearssl_ssl.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="65312" topLine="4276" />
+		</Cursor>
+	</File>
+	<File name="mosq_brssl_main.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4491" topLine="114" />
+		</Cursor>
+	</File>
+	<File name="buf_iov.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1173" topLine="1" />
+		</Cursor>
+	</File>
+	<File name="BearSSL/tools/names.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="20646" topLine="678" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/mqtt3_protocol.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="BearSSL/src/settings.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1146" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/read_handle.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="749" topLine="5" />
+		</Cursor>
+	</File>
+	<File name="BearSSL/tools/certs.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3987" topLine="130" />
+		</Cursor>
+	</File>
+	<File name="tn_alloc.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="18666" topLine="584" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/will_mosq.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="584" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="BearSSL/tools/xmem.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3356" topLine="101" />
+		</Cursor>
+	</File>
+	<File name="mosq_brssl.c" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="23295" topLine="771" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/send_mosq.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3991" topLine="119" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/read_handle.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="984" topLine="20" />
+		</Cursor>
+	</File>
+	<File name="BearSSL/tools/brssl.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1285" topLine="17" />
+		</Cursor>
+	</File>
+	<File name="tn_alloc.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1958" topLine="34" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/net_mosq.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="27" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/read_handle_client.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1540" topLine="21" />
+		</Cursor>
+	</File>
+	<File name="buf_iov.c" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1433" topLine="22" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/util_mosq.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="1" />
+		</Cursor>
+	</File>
+	<File name="BearSSL/inc/bearssl_hash.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="22758" topLine="644" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/time_mosq.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/memory_mosq.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="938" topLine="15" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/read_handle_shared.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5130" topLine="25" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/mosquitto_internal.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4183" topLine="189" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/send_mosq.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="BearSSL/src/ssl/ssl_client.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2120" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="BearSSL/tools/files_ex.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8018" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="BearSSL/src/hash/sha2small.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8023" topLine="292" />
+		</Cursor>
+	</File>
+	<File name="BearSSL/src/ec/ec_c25519_m31.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1865" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/mosquitto_emb.c" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="40067" topLine="95" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_ex.c" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="28174" topLine="908" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/mosquitto_emb.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="56354" topLine="1547" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/net_mosq.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8253" topLine="169" />
+		</Cursor>
+	</File>
+	<File name="mosq_emb_client/send_client_mosq.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1099" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="BearSSL/src/ec/ec_c25519_i15.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2071" topLine="56" />
+		</Cursor>
+	</File>
+	<File name="BearSSL/tools/keys.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3556" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

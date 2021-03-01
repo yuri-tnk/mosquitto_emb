@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="mosq_emb_brssl" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/mosq_emb_brssl" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-m32" />
+					<Add directory="BearSSL/inc" />
+					<Add directory="BearSSL/src" />
+					<Add directory="BearSSL/tools" />
+					<Add directory="mosq_emb_client" />
+					<Add directory="../mosq_emb_brssl" />
+				</Compiler>
+				<Linker>
+					<Add option="-m32" />
+					<Add library="pthread" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/mosq_emb_bssl" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="BearSSL/inc/bearssl.h" />
+		<Unit filename="BearSSL/inc/bearssl_aead.h" />
+		<Unit filename="BearSSL/inc/bearssl_block.h" />
+		<Unit filename="BearSSL/inc/bearssl_ec.h" />
+		<Unit filename="BearSSL/inc/bearssl_hash.h" />
+		<Unit filename="BearSSL/inc/bearssl_hmac.h" />
+		<Unit filename="BearSSL/inc/bearssl_kdf.h" />
+		<Unit filename="BearSSL/inc/bearssl_pem.h" />
+		<Unit filename="BearSSL/inc/bearssl_prf.h" />
+		<Unit filename="BearSSL/inc/bearssl_rand.h" />
+		<Unit filename="BearSSL/inc/bearssl_rsa.h" />
+		<Unit filename="BearSSL/inc/bearssl_ssl.h" />
+		<Unit filename="BearSSL/inc/bearssl_x509.h" />
+		<Unit filename="BearSSL/src/aead/ccm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/aead/eax.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/aead/gcm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/codec/ccopy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/codec/dec16be.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/codec/dec16le.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/codec/dec32be.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/codec/dec32le.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/codec/dec64be.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/codec/dec64le.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/codec/enc16be.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/codec/enc16le.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/codec/enc32be.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/codec/enc32le.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/codec/enc64be.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/codec/enc64le.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/codec/pemdec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/codec/pemenc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/config.h" />
+		<Unit filename="BearSSL/src/ec/ec_all_m15.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_all_m31.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_c25519_i15.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_c25519_i31.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_c25519_m15.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_c25519_m31.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_c25519_m62.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_c25519_m64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_curve25519.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_default.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_keygen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_p256_m15.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_p256_m31.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_p256_m62.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_p256_m64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_prime_i15.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_prime_i31.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_pubkey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_secp256r1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_secp384r1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ec_secp521r1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_atr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_default_sign_asn1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_default_sign_raw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_default_vrfy_asn1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_default_vrfy_raw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_i15_bits.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_i15_sign_asn1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_i15_sign_raw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_i15_vrfy_asn1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_i15_vrfy_raw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_i31_bits.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_i31_sign_asn1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_i31_sign_raw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_i31_vrfy_asn1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_i31_vrfy_raw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ec/ecdsa_rta.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/hash/dig_oid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/hash/dig_size.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/hash/ghash_ctmul.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/hash/ghash_ctmul32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/hash/ghash_ctmul64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/hash/ghash_pclmul.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/hash/ghash_pwr8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/hash/md5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/hash/md5sha1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/hash/mgf1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/hash/multihash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/hash/sha1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/hash/sha2big.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/hash/sha2small.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/inner.h" />
+		<Unit filename="BearSSL/src/int/i15_add.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_bitlen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_decmod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_decode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_decred.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_encode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_fmont.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_iszero.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_moddiv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_modpow.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_modpow2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_montmul.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_mulacc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_muladd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_ninv15.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_reduce.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_rshift.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_sub.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i15_tmont.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_add.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_bitlen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_decmod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_decode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_decred.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_encode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_fmont.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_iszero.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_moddiv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_modpow.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_modpow2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_montmul.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_mulacc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_muladd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_ninv31.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_reduce.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_rshift.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_sub.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i31_tmont.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_add.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_bitlen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_decmod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_decode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_decred.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_div32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_encode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_fmont.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_iszero.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_modpow.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_montmul.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_mulacc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_muladd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_ninv32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_reduce.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_sub.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i32_tmont.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/int/i62_modpow2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/kdf/hkdf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/kdf/shake.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/mac/hmac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/mac/hmac_ct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rand/aesctr_drbg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rand/hmac_drbg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rand/sysrng.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_default_keygen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_default_modulus.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_default_oaep_decrypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_default_oaep_encrypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_default_pkcs1_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_default_pkcs1_vrfy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_default_priv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_default_privexp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_default_pss_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_default_pss_vrfy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_default_pub.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_default_pubexp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i15_keygen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i15_modulus.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i15_oaep_decrypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i15_oaep_encrypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i15_pkcs1_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i15_pkcs1_vrfy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i15_priv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i15_privexp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i15_pss_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i15_pss_vrfy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i15_pub.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i15_pubexp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i31_keygen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i31_keygen_inner.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i31_modulus.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i31_oaep_decrypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i31_oaep_encrypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i31_pkcs1_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i31_pkcs1_vrfy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i31_priv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i31_privexp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i31_pss_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i31_pss_vrfy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i31_pub.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i31_pubexp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i32_oaep_decrypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i32_oaep_encrypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i32_pkcs1_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i32_pkcs1_vrfy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i32_priv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i32_pss_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i32_pss_vrfy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i32_pub.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i62_keygen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i62_oaep_decrypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i62_oaep_encrypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i62_pkcs1_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i62_pkcs1_vrfy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i62_priv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i62_pss_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i62_pss_vrfy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_i62_pub.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_oaep_pad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_oaep_unpad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_pkcs1_sig_pad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_pkcs1_sig_unpad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_pss_sig_pad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_pss_sig_unpad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/rsa/rsa_ssl_decrypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/settings.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/prf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/prf_md5sha1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/prf_sha256.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/prf_sha384.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_ccert_single_ec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_ccert_single_rsa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_client_default_rsapub.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_client_full.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_engine.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_engine_default_aescbc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_engine_default_aesccm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_engine_default_aesgcm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_engine_default_chapol.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_engine_default_descbc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_engine_default_ec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_engine_default_ecdsa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_engine_default_rsavrfy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_hashes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_hs_client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_hs_server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_io.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_keyexport.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_lru.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_rec_cbc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_rec_ccm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_rec_chapol.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_rec_gcm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_scert_single_ec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_scert_single_rsa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_server_full_ec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_server_full_rsa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_server_mine2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_server_mine2g.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_server_minf2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_server_minf2g.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_server_minr2g.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_server_minu2g.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/ssl/ssl_server_minv2g.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_big_cbcdec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_big_cbcenc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_big_ctr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_big_ctrcbc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_big_dec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_big_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_ct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_ct64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_ct64_cbcdec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_ct64_cbcenc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_ct64_ctr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_ct64_ctrcbc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_ct64_dec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_ct64_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_ct_cbcdec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_ct_cbcenc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_ct_ctr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_ct_ctrcbc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_ct_dec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_ct_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_pwr8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_pwr8_cbcdec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_pwr8_cbcenc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_pwr8_ctr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_pwr8_ctrcbc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_small_cbcdec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_small_cbcenc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_small_ctr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_small_ctrcbc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_small_dec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_small_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_x86ni.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_x86ni_cbcdec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_x86ni_cbcenc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_x86ni_ctr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/aes_x86ni_ctrcbc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/chacha20_ct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/chacha20_sse2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/des_ct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/des_ct_cbcdec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/des_ct_cbcenc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/des_support.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/des_tab.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/des_tab_cbcdec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/des_tab_cbcenc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/poly1305_ctmul.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/poly1305_ctmul32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/poly1305_ctmulq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/symcipher/poly1305_i15.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/x509/asn1enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/x509/encode_ec_pk8der.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/x509/encode_ec_rawder.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/x509/encode_rsa_pk8der.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/x509/encode_rsa_rawder.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/x509/skey_decoder.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/x509/x509_decoder.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/x509/x509_knownkey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/x509/x509_minimal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/src/x509/x509_minimal_full.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/tools/brssl.h" />
+		<Unit filename="BearSSL/tools/certs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/tools/errors.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/tools/files_ex.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/tools/keys.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/tools/names.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/tools/vector.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BearSSL/tools/xmem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="buf_iov.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="buf_iov.h" />
+		<Unit filename="mosq_brssl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mosq_brssl_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mosq_emb_client/logging_mosq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mosq_emb_client/logging_mosq.h" />
+		<Unit filename="mosq_emb_client/memory_mosq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mosq_emb_client/memory_mosq.h" />
+		<Unit filename="mosq_emb_client/messages_mosq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mosq_emb_client/messages_mosq.h" />
+		<Unit filename="mosq_emb_client/mosquitto_emb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mosq_emb_client/mosquitto_emb.h" />
+		<Unit filename="mosq_emb_client/mosquitto_internal.h" />
+		<Unit filename="mosq_emb_client/mqtt3_protocol.h" />
+		<Unit filename="mosq_emb_client/net_mosq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mosq_emb_client/net_mosq.h" />
+		<Unit filename="mosq_emb_client/read_handle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mosq_emb_client/read_handle.h" />
+		<Unit filename="mosq_emb_client/read_handle_client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mosq_emb_client/read_handle_shared.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mosq_emb_client/send_client_mosq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mosq_emb_client/send_mosq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mosq_emb_client/send_mosq.h" />
+		<Unit filename="mosq_emb_client/time_mosq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mosq_emb_client/time_mosq.h" />
+		<Unit filename="mosq_emb_client/util_mosq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mosq_emb_client/util_mosq.h" />
+		<Unit filename="mosq_emb_client/will_mosq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mosq_emb_client/will_mosq.h" />
+		<Unit filename="mosq_emb_ex.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tn_alloc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tn_alloc.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
